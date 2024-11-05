@@ -1,0 +1,33 @@
+ примеры API-запросов
+
+@baseUrl = http://127.0.0.1:8443
+
+###
+
+# создание объявления
+POST {{baseUrl}}/ad
+Content-Type: application/json
+
+{
+  "title": "Шкаф IKEA",
+  "description": "Срочно",
+  "user_id": 1
+}
+
+###
+
+# получение объявлений
+GET {{baseUrl}}/ad/1
+Content-Type: application/json
+
+###
+
+# удаление объявления
+DELETE {{baseUrl}}/ad/1
+Content-Type: application/json
+
+{
+  "title": "Шкаф IKEA",
+  "description": "Срочно",
+  "user_id": 1
+}
